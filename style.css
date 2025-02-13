@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+h1,h2,h4{
+  font-size: 25px;
+}
+.box-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 42vw;
+  height: auto;
+  margin-top: 2vw;
+  padding: 0;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+.bx{
+  width: 264px;
+  height: 264px;
+}
+#start-bx{
+  display: flex;
+  position: absolute;
+  top: 45%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+#red{
+  border-top-left-radius: 100%;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#green{
+  border-top-right-radius: 100%;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#yellow{
+  border-bottom-left-radius: 100%;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+}
+#blue{
+  border-bottom-right-radius: 100%;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.red{
+  background-color: #d55075;
+}
+.green{
+  background-color: #58a0b9;
+}
+.yellow{
+  background-color: #fa903b;
+}
+.blue{
+  background-color: #7794f8;
+}
+.flash{
+  background-color: white;
+}
+.userFlash{
+  background-color: rgba(43, 212, 43, 0.58);
+}
+
+@media (min-width:392px) and (max-width: 768px) {
+  h1,h2,h4{
+    font-size: 10px;
+    margin-top: 4vw;
+  }
+  .box-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 79vw;
+    height: auto;
+    margin-top: 50vw;
+    border: 10px solid black;
+    border-radius: 50%;
+  }
+  .bx{
+    width: 150px;
+    height: 150px;
+  }
+  #start-bx{
+    display: flex;
+    position: absolute;
+    top: 42%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+}
